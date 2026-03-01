@@ -75,18 +75,18 @@ se = np.sqrt(r1.var() / len(r1) + r0.var() / len(r0))
 ci_lower = gamma_hat - 1.96 * se
 ci_upper = gamma_hat + 1.96 * se
 
-# Print results
-print("DID Results (Log Scale)")
-print("=======================")
-print(f"Gamma hat: {gamma_hat:.4f}")
-print(f"Std Error: {se:.4f}")
-print(f"95% CI: [{ci_lower:.4f}, {ci_upper:.4f}]")
 
 # Exponentiated (levels) results
 gamma_hat_exp = np.exp(gamma_hat)
 ci_lower_exp = np.exp(ci_lower)
 ci_upper_exp = np.exp(ci_upper)
 
+# Print results
+print("DID Results (Log Scale)")
+print("=======================")
+print(f"Gamma hat: {gamma_hat_exp:.4f}")
+print(f"Std Error: {se:.4f}")
+print(f"95% CI: [{ci_lower_exp:.4f}, {ci_upper_exp:.4f}]")
 
 # Create LaTeX table
 latex = r"""\begin{table}[h]
