@@ -103,3 +103,7 @@ Standard Error & $%.4f$ & --- \\
 \end{tabular}
 \label{tab:did}
 \end{table}""" % (gamma_hat, gamma_hat_exp, se, ci_lower, ci_upper, ci_lower_exp, ci_upper_exp)
+
+with open("output/tables/did_table.tex", "w") as f:
+    f.write(latex)
+
