@@ -1,6 +1,10 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+
+os.madedirs('temp', exist_ok=True)
+os.makedirs('output/figures', exist_ok=True)
 
 # ----------------------------
 # Step 1: Load and prepare data
