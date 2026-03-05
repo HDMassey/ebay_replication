@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-os.madedirs('temp', exist_ok=True)
+os.makedirs('temp', exist_ok=True)
 os.makedirs('output/figures', exist_ok=True)
 
 # ----------------------------
