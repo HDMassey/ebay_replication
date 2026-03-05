@@ -7,12 +7,12 @@ echo "========================================"
 echo ""
 
 echo "Step 1: Preprocessing and figures..."
-.venv/bin/python code/preprocess.py
+python3 code/preprocess.py
 echo " -> Figures saved to output/figures/"
 echo ""
 
 echo "Step 2: DID estimation and tables..."
-.venv/bin/python code/did_analysis.py
+python3 code/did_analysis.py
 echo " -> Table saved to output/tables/"
 echo ""
 
